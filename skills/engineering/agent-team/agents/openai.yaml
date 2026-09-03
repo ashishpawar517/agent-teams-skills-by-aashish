@@ -1,0 +1,5 @@
+interface:
+  display_name: "Agent Team"
+  short_description: "Dispatch parallel agents onto typed tickets"
+policy:
+  allow_implicit_invocation: false
