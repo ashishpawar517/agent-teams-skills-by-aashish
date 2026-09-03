@@ -1,0 +1,28 @@
+# Registry: Type -> Skill mapping for /agent-team Dispatch.
+# Adding a Type is one entry here plus an optional prompt template
+# under references/prompts/. No SKILL.md change required.
+
+maxParallel: 3
+failPolicy: best-effort
+branchPrefix: agent-team/
+dispatchLogDir: scratch/
+
+types:
+  research:
+    skill: research
+    subagent_type: general
+    outputDir: .scratch/<feature>/research/
+  backend:
+    skill: implement
+    seam: backend
+    subagent_type: general
+    testLoop: tdd
+  frontend:
+    skill: implement
+    seam: frontend
+    subagent_type: general
+    testLoop: tdd
+  general:
+    skill: implement
+    subagent_type: general
+    testLoop: tdd
